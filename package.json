@@ -1,0 +1,18 @@
+{
+  "name": "utils",
+  "version": "1.0.1",
+  "description": "Library with frequently used functions",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "utils",
+    "functions"
+  ],
+  "author": "Mike Wijnen",
+  "license": "ISC",
+  "dependencies": {
+    "deasync": "^0.1.12"
+  }
+}
