@@ -1,7 +1,7 @@
-require('./array');
+require('./core/array');
 
 export default {
-  Future: require('./future'),
-  parallel: require('./parallel'),
-  series: require('./series'),
+  Future: require('./core/future'),
+  parallel: require('./core/parallel'),
+  series: require('./core/series'),
 };
