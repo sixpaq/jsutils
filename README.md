@@ -1,5 +1,35 @@
 ## JSUtils
 
+### Array extensions
+
+#### firstOrNull
+This method is added to the array prototype. This returns the first element
+of an array or null if the array is empty.
+
+#### example
+```
+const myArray = [1, 2, 3];
+console.log(myArray.firstOrNull); // returns 1
+```
+
+```
+const myArray = [];
+console.log(myArray.firstOrNull); // returns null;
+```
+
+#### lastOrNull
+This method is added to the array prototype. This returns the last element
+of an array or null if the array is empty.
+```
+const myArray = [1, 2, 3];
+console.log(myArray.firstOrNull); // returns 3
+```
+
+```
+const myArray = [];
+console.log(myArray.firstOrNull); // returns null;
+```
+
 ### Future
 This is a simple Future implementation based on deasync. This is an easy way
 to turn an asynchronous process in to a synchronous process.
