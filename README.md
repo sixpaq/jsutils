@@ -1,36 +1,36 @@
 ## JSUtils
 
-### Array extensions
+## Array extensions
 
-#### firstOrNull
-This method is added to the array prototype. This returns the first element
+### firstOrNull
+This method is added to the Array prototype. This returns the first element
 of an array or null if the array is empty.
 
 #### example
 ```
 const myArray = [1, 2, 3];
-console.log(myArray.firstOrNull); // returns 1
+console.log(myArray.firstOrNull()); // returns 1
 ```
 
 ```
 const myArray = [];
-console.log(myArray.firstOrNull); // returns null;
+console.log(myArray.firstOrNull()); // returns null;
 ```
 
-#### lastOrNull
-This method is added to the array prototype. This returns the last element
+### lastOrNull
+This method is added to the Array prototype. This returns the last element
 of an array or null if the array is empty.
 ```
 const myArray = [1, 2, 3];
-console.log(myArray.firstOrNull); // returns 3
+console.log(myArray.lastOrNull()); // returns 3
 ```
 
 ```
 const myArray = [];
-console.log(myArray.firstOrNull); // returns null;
+console.log(myArray.lastOrNull()); // returns null;
 ```
 
-### Future
+## Future
 This is a simple Future implementation based on deasync. This is an easy way
 to turn an asynchronous process in to a synchronous process.
 
@@ -49,7 +49,7 @@ setTimeout(() => {
 const output = f.wait;
 ```
 
-### parallel
+## parallel
 Processes a list of functions in parallel and calls the callback when all functions
 have finished or when an error occures.
 
@@ -74,7 +74,7 @@ parallel(tasks, (err, results) => {
 });
 ```
 
-### series
+## series
 Processes a list of functions serial and calls the callback when all functions
 have finished or when an error occures.
 
