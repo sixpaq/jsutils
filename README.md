@@ -1,5 +1,4 @@
-## Utils
-
+## JSUtils
 
 ### Future
 This is a simple Future implementation based on deasync. This is an easy way
