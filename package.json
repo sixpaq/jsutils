@@ -1,6 +1,6 @@
 {
-  "name": "utils",
-  "version": "1.0.2",
+  "name": "jsutils",
+  "version": "1.0.3",
   "description": "Library with frequently used functions",
   "main": "index.js",
   "scripts": {
