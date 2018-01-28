@@ -10,13 +10,13 @@ to turn an asynchronous process in to a synchronous process.
 const f = new Future();
 
 setTimeout(() => {
-  if (somethingBad) {
+  if (somethingBadHappened) {
     f.throw(new Error('Bad'));
   }
   f.return(5);
-})
+}, 2000);
 
-// Here we wait for the result, which will be placed in the output or an exception is thown.
+// Here we wait for the result (5), which will be placed in the output or an exception is thown.
 const output = f.wait;
 ```
 
@@ -52,7 +52,7 @@ have finished or when an error occures.
 #### Syntax:
 series(tasks, callback);
 
-Example:
+#### Example:
 ```
 const tasks = [];
 tasks.push((cb) => {
