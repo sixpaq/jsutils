@@ -30,4 +30,4 @@ async function parallel(tasks, callback) {
   return callback(errors, results);
 }
 
-export default parallel;
+module.exports = parallel;

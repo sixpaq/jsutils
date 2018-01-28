@@ -30,4 +30,4 @@ async function series(tasks, callback) {
   return callback(errors, results);
 }
 
-export default series;
+module.exports = series;

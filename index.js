@@ -1,6 +1,6 @@
 require('./core/array');
 
-export default {
+module.exports = {
   Future: require('./core/future'),
   parallel: require('./core/parallel'),
   series: require('./core/series'),
