@@ -4,7 +4,7 @@
 This method is added to the Array prototype. This returns the first element
 of an array or null if the array is empty.
 
-#### Examples
+#### Examples:
 ```
 const myArray = [1, 2, 3];
 console.log(myArray.firstOrNull()); // returns 1
@@ -19,7 +19,7 @@ console.log(myArray.firstOrNull()); // returns null;
 This method is added to the Array prototype. This returns the last element
 of an array or null if the array is empty.
 
-#### Examples
+#### Examples:
 ```
 const myArray = [1, 2, 3];
 console.log(myArray.lastOrNull()); // returns 3
