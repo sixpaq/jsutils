@@ -28,7 +28,7 @@ async function series(tasks, callback) {
     catch (err) {};
   }
   if (callback === undefined) {
-    if (errors) throw errors;
+    if (errors.length) throw errors;
     return results;
   }
   return callback(errors, results);

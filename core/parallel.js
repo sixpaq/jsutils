@@ -45,7 +45,7 @@ async function parallel(tasks, max = -1, callback) {
 
   await Promise.all(proms);
   if (callback === undefined) {
-    if (errors) throw errors;
+    if (errors.length) throw errors;
     return results;
   }
   return callback(errors, results);
