@@ -27,6 +27,10 @@ async function series(tasks, callback) {
     try { await prom; }
     catch (err) {};
   }
+  if (callback === undefined) {
+    if (errors) throw errors;
+    return results;
+  }
   return callback(errors, results);
 }
 
