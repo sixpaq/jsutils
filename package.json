@@ -1,17 +1,24 @@
 {
-  "name": "jsutils",
-  "version": "1.0.4",
+  "name": "sixpaq-js-utils",
+  "version": "1.0.5",
   "description": "Library with frequently used functions",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "utils",
-    "functions"
+    "functions",
+    "sync",
+    "synchronize",
+    "serial",
+    "parallel",
+    "future"
   ],
   "author": "Mike Wijnen",
   "license": "ISC",
+  "repository": {
+    "url": "https://github.com/sixpaq/jsutils"
+  },
   "dependencies": {
     "deasync": "^0.1.12"
   }
