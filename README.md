@@ -54,7 +54,7 @@ Processes a list of functions in parallel and calls the callback when all functi
 have finished or when an error occures.
 
 #### Syntax:
-parallel(tasks, callback);
+parallel(tasks, max = -1, callback);
 
 #### Example:
 ```
@@ -69,7 +69,7 @@ tasks.push((cb) => {
   cb(null, 3);
 });
 
-parallel(tasks, (err, results) => {
+parallel(tasks, (err, 5, results) => {
   // contains is now [5, 3] unless an error occured.
 });
 ```

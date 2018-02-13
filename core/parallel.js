@@ -4,7 +4,8 @@ const { loopWhile } = require('deasync');
  * Performs a series of tasks in parallel. When all tasks are
  * finished, the callback function is called.
  * 
- * @param {any} tasks 
+ * @param {any} tasks Array of tasks
+ * @param {number} max Maximum number of parallel tasks simultaneously
  * @param {any} callback (err, results)
  * @returns 
  */
